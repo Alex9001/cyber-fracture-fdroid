@@ -1,0 +1,27 @@
+License: ISC
+AuthorName: Aleksandr Oreshkin
+SourceCode: https://github.com/Alex9001/pixel-gallery-redirect
+IssueTracker: https://github.com/Alex9001/pixel-gallery-redirect/issues
+Changelog: https://github.com/Alex9001/pixel-gallery-redirect/blob/main/CHANGELOG.md
+
+AutoName: Pixel Gallery Redirect
+
+RepoType: git
+Repo: https://github.com/Alex9001/pixel-gallery-redirect.git
+
+Summary: Open Pixel Camera previews in the gallery you choose
+
+Description: |
+    Pixel Gallery Redirect receives Pixel Camera's photo-preview request and opens
+    the installed media viewer you choose. Select a gallery once, or choose Ask
+    every time from the app icon.
+
+    The app forwards only the camera's content URI and temporary read access. It
+    has no network permission, photo-library permission, background service, or
+    third-party runtime dependencies.
+
+    It uses the Google Photos package ID required by Pixel Camera. It cannot be
+    installed beside Google Photos or another app using that package ID.
+
+CurrentVersion: 1.1.0
+CurrentVersionCode: 3

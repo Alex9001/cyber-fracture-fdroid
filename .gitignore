@@ -1,0 +1,4 @@
+fdroid/.private/
+fdroid/config.yml
+.fdroid/
+tmp/

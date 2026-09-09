@@ -1,0 +1,9 @@
+CYBER FRACTURE F-Droid Repository signing fingerprint
+
+SHA-256:
+B3:91:05:30:73:F0:F9:05:59:4C:91:4D:4A:63:C9:D1:CD:B6:73:F0:0D:DE:EE:A5:7C:F7:CF:98:48:0E:10:47
+
+Compare this value with the repository fingerprint shown by the F-Droid client
+before trusting https://alex9001.github.io/cyber-fracture-fdroid/fdroid/repo.
+
+This is the repository-index key, not an Android application signing certificate.

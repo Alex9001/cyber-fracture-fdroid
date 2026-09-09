@@ -13,7 +13,7 @@ Repo: https://github.com/Alex9001/pixel-gallery-redirect.git
 
 Summary: Open Pixel Camera previews in the gallery you choose
 
-Description: |
+Description: >
     Pixel Gallery Redirect receives Pixel Camera's photo-preview request and opens
     the installed media viewer you choose. Select a gallery once, or choose Ask
     every time from the app icon.

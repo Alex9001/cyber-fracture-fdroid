@@ -1,1 +1,1 @@
-{"repo": {"timestamp": 1788919253693, "categories": {"System": {"name": {"en-US": "System"}}}}, "packages": {"com.google.android.apps.photos": {"metadata": {"categories": ["System"]}}}}
+{"repo": {"icon": {"en-US": {"name": "/icons/cyber-fracture-repository.png", "sha256": "d02c73e33eaec46226937624350b2260d3dde29e13d5d2336d5282b351265d02", "size": 907583}}, "timestamp": 1788919308983, "categories": {"Gallery": {"name": {"en-US": "Gallery"}}}}, "packages": {"com.google.android.apps.photos": {"metadata": {"categories": ["Gallery"]}}}}

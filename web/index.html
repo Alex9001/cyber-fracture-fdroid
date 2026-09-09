@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Official Android apps from CYBER FRACTURE. Independent software, directly from the developer.">
-  <title>CYBER FRACTURE · Android apps</title>
+  <meta name="description" content="{{DESCRIPTION}}">
+  <title>{{NAME}} · Android apps</title>
   <style>
     :root { color-scheme: dark; font-family: system-ui, sans-serif; color: #f1f6f7; background: #0c1117; }
     * { box-sizing: border-box; }
@@ -36,22 +36,22 @@
 <body>
 <main>
   <div class="eyebrow">Independent Android apps</div>
-  <h1>CYBER FRACTURE</h1>
-  <p class="intro">Official Android apps from CYBER FRACTURE. Independent software, directly from the developer. Add our repository once to get Pixel Gallery Redirect and future releases in your F-Droid client.</p>
+  <h1>{{NAME}}</h1>
+  <p class="intro">{{DESCRIPTION}} Add our repository once to get Pixel Gallery Redirect and future releases in your F-Droid client.</p>
   <section class="panel" aria-labelledby="add-title">
     <div>
       <h2 id="add-title">Your apps. Your updates.</h2>
       <p>On your phone, tap <strong>Add to F-Droid</strong>. On another screen, scan the QR with the scanner inside F-Droid or Droid-ify.</p>
       <div class="actions">
-        <a class="button" href="https://fdroid.link/#https://alex9001.github.io/cyber-fracture-fdroid/fdroid/repo?fingerprint=B391053073F0F905594C914D4A63C9D1CDB673F00DDEEEA57CF7CF98480E1047">Add to F-Droid</a>
-        <button class="button" id="copy" type="button" data-url="https://alex9001.github.io/cyber-fracture-fdroid/fdroid/repo?fingerprint=B391053073F0F905594C914D4A63C9D1CDB673F00DDEEEA57CF7CF98480E1047">Copy repository link</button>
+        <a class="button" href="{{ADD_LINK}}">Add to F-Droid</a>
+        <button class="button" id="copy" type="button" data-url="{{COPY_LINK}}">Copy repository link</button>
       </div>
       <p id="copy-status" role="status" aria-live="polite"></p>
-      <p>After adding, refresh your repositories. The name should appear as <strong>CYBER FRACTURE</strong>.</p>
+      <p>After adding, refresh your repositories. The name should appear as <strong>{{NAME}}</strong>.</p>
     </div>
     <figure class="qr">
-      <a href="https://alex9001.github.io/cyber-fracture-fdroid/fdroid/repo/index.png" aria-label="Open full-size add-repository QR code">
-        <img src="https://alex9001.github.io/cyber-fracture-fdroid/fdroid/repo/index.png" width="300" height="300" alt="Scan to add CYBER FRACTURE with its signing fingerprint">
+      <a href="{{URL}}/index.png" aria-label="Open full-size add-repository QR code">
+        <img src="{{URL}}/index.png" width="300" height="300" alt="Scan to add CYBER FRACTURE with its signing fingerprint">
       </a>
       <figcaption>Scan from your F-Droid client · tap to enlarge</figcaption>
     </figure>
@@ -59,9 +59,9 @@
   <details>
     <summary>Add manually or verify the fingerprint</summary>
     <p>In your client, open Repositories → Add and paste this address:</p>
-    <code class="address">https://alex9001.github.io/cyber-fracture-fdroid/fdroid/repo</code>
+    <code class="address">{{URL}}</code>
     <p>The QR and copied link include this repository signing fingerprint:</p>
-    <code class="address">B3:91:05:30:73:F0:F9:05:59:4C:91:4D:4A:63:C9:D1:CD:B6:73:F0:0D:DE:EE:A5:7C:F7:CF:98:48:0E:10:47</code>
+    <code class="address">{{FINGERPRINT}}</code>
     <p>If an earlier entry still shows a URL or a generic name, refresh it. If the refresh fails, edit its address to the one above and try again. A custom name you set yourself may need to be changed in your client.</p>
   </details>
   <footer><a href="https://github.com/Alex9001/cyber-fracture-fdroid">Repository on GitHub</a> · <a href="https://github.com/Alex9001/pixel-gallery-redirect">Pixel Gallery Redirect</a><p>An independent repository, separate from F-Droid’s main catalogue.</p></footer>

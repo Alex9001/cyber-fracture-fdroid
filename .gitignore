@@ -2,3 +2,6 @@ fdroid/.private/
 fdroid/config.yml
 .fdroid/
 tmp/
+fdroid/tmp/
+_site/
+__pycache__/

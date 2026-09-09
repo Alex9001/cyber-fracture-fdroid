@@ -8,6 +8,15 @@ if [ ! -f "$repo_root/fdroid/config.yml" ]; then
     exit 1
 fi
 
-exec docker run --rm -v "$repo_root:/repo" -w /repo/fdroid \
-    registry.gitlab.com/fdroid/docker-executable-fdroidserver:master \
-    update --clean --rename-apks
+image=registry.gitlab.com/fdroid/docker-executable-fdroidserver@sha256:63d734242f4110a76a7df26d8c62527341964a331ef6baeed6864f91112310a2
+
+docker run --rm -v "$repo_root:/repo" -w /repo/fdroid \
+    --entrypoint python3 "$image" /repo/scripts/configure-repo.py
+docker run --rm -v "$repo_root:/repo" -w /repo/fdroid \
+    "$image" update --clean --rename-apks
+docker run --rm -v "$repo_root/fdroid/repo:/public:ro" \
+    -v "$repo_root/scripts:/checks:ro" -w /tmp \
+    -e PYTHONPATH=/home/vagrant/fdroidserver --entrypoint python3 \
+    "$image" /checks/check-repo.py /public
+docker run --rm -v "$repo_root:/repo" -w /repo/fdroid \
+    --entrypoint python3 "$image" /repo/scripts/render-page.py
